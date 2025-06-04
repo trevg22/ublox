@@ -299,7 +299,7 @@ impl From<u8> for SensorStatus1 {
 
 #[repr(u8)]
 #[derive(Copy, Clone, Debug)]
-#[cfg_attr(feature = "serde", derive(serde::Serialize))]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum EsfSensorType {
     None = 0,
     /// Angular acceleration in [deg/s]
