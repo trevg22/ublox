@@ -6,6 +6,7 @@ use super::SerializeUbxPacketFields;
 #[cfg(feature = "serde")]
 use crate::serde::ser::SerializeMap;
 
+use crate::FieldIter;
 use crate::{error::ParserError, NavSatSvHealth, UbxPacketMeta};
 use ublox_derive::ubx_packet_recv;
 
